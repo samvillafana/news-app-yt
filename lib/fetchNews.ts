@@ -15,7 +15,7 @@ const fetchNews = async (
     myQuery(
       access_key: $access_key
         categories: $categories
-        countries: "gb"
+        countries: "gb,us"
         sort: "published_desc"
         keywords: $keywords
         ){
@@ -70,6 +70,7 @@ const fetchNews = async (
     keywords
   );
 
+  
   const newsResponse = await res.json();
   console.log(newsResponse.data.myQuery);
 
