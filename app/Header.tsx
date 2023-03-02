@@ -13,7 +13,7 @@ function Header() {
           <h1 className="font-serif text-4xl text-center">
             The{" "}
             <span className="underline decoration-6 decoration-orange-400">
-              PAPAFAM
+              VILLAFANA
             </span>{" "}
             News
           </h1>
