@@ -1,19 +1,20 @@
 import { notFound } from "next/navigation";
-import LiveTimestamp from "../LiveTimestamp";
+import LiveTimestamp from "../LiveTimestamp"
 
-type Props = {
-  searchParams?: Article;
+type Props ={
+  searchParams?: Article
 };
 
-function ArticlePage({ searchParams }: Props) {
+function ArticlePage({searchParams}: Props) {
   if (
-    (searchParams && Object.entries(searchParams).length === 0) ||
-    !searchParams
-  ) {
-    return notFound();
-  }
+    ( searchParams && Object.entries(searchParams).length ===0) ||
+     !searchParams
 
-  const article: Article = searchParams;
+  ){
+    return notFound ();
+
+  }
+  const article:Article = searchParams;
 
   return (
     <article>
@@ -26,7 +27,7 @@ function ArticlePage({ searchParams }: Props) {
           />
         )}
 
-        <div className="px-10">
+<div className="px-10">
           <h1 className="headerTitle px-0 no-underline pb-2">
             {article.title}
           </h1>
